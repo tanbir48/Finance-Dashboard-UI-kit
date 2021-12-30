@@ -161,7 +161,7 @@
     list-style: none;
 
     width: 0% !important;
-    font-size: 11px;
+    font-size: 10px !important;
   }
   .latest-transaction-row ul li:nth-of-type(5) {
     padding-left: 40px !important;
@@ -310,7 +310,10 @@
     justify-content: space-between;
     margin-bottom: 15px;
   }
-  .latest-transaction-row ul li:nth-of-type(5) {
-    padding-left: 18px;
+  .currency-rates-row ul li {
+    font-size: 12px !important;
+  }
+  .latest-transaction-row ul li {
+    font-size: 12px !important;
   }
 }

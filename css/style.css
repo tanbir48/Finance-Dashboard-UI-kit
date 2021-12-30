@@ -186,6 +186,10 @@ body {
   margin: 20px;
   border-radius: 6px;
 }
+
+.header-item li {
+  color: grey !important;
+}
 .latest-transaction-header {
   display: flex;
   justify-content: space-between;
@@ -352,7 +356,6 @@ body {
 }
 .iconnumber {
   display: flex;
-  align-items: center;
 }
 .iconandnumber .star {
   display: flex;
