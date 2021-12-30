@@ -90,6 +90,7 @@ body {
 }
 .Main-body .dashboard {
   width: 88%;
+  padding-bottom: 15px;
 }
 .Main-body .dashboard nav {
   display: flex;
@@ -253,12 +254,17 @@ body {
   color: #162a9d !important;
 }
 
+.latest-transaction-row ul li:nth-of-type(4) {
+  color: rgb(185, 23, 23);
+}
+
 .latest-transaction-row ul li:nth-of-type(4) input {
   margin-right: 5px;
 }
 .latest-transaction-row ul li:nth-of-type(5) {
   display: flex;
   align-items: center;
+  color: rgb(185, 23, 23);
   padding-left: 25px;
 }
 .latest-transaction-row ul li:nth-of-type(5) i {
