@@ -248,7 +248,10 @@ body {
   color: transparent !important;
   background: none;
   display: block;
-  padding: 1px;
+  padding-left: 1px;
+  padding-right: 0.5px;
+  padding-top: 1px;
+  padding-bottom: 0.5px;
   width: 10px;
   border-radius: 50%;
   height: 10px;
