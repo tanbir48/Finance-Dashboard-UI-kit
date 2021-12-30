@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.Main-body {
+  display: flex;
+}
+
+.Main-body .my-task {
+  min-width: 12%;
+  background-color: #2a3eaf;
+
+  padding: 10px;
+}
+
+.Main-body .task-item .task {
+  display: flex;
+  padding: 6px;
+  align-items: center !important;
+  justify-content: centers;
+  margin-bottom: 25px;
+}
+
+.Main-body .task-item .task-head {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  align-items: center !important;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.Main-body .task-item .task-head a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding-left: 6px;
+  font-weight: 700;
+}
+
+.Main-body .task-item .task-head h3 {
+  padding-left: 6px;
+  padding-bottom: 15px;
+  color: #ffff;
+  font-size: 14px;
+}
+.task a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.task:hover a {
+  text-decoration: none;
+  color: #6e4ff2;
+}
+.Main-body .task-item .task:hover {
+  background-color: #ffff;
+  border-radius: 10px;
+  color: #6e4ff2;
+}
+.Main-body .task-item .task p a {
+  font-weight: 500;
+}
+.Main-body .task-item .task:hover p a {
+  color: #6e4ff2;
+}
+.Main-body .task-item .task:hover span {
+  color: #6e4ff2;
+}
+.Main-body .task-item .task span {
+  margin-right: 20px;
+  width: 5%;
+  align-items: center;
+  padding: 6px;
+  color: #ffff;
+  margin-top: 5px;
+}
+.Main-body .task-item .task p a {
+  text-decoration: none;
+  padding-left: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+.Main-body .dashboard {
+  width: 88%;
+}
+.Main-body .dashboard nav {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  background-color: rgba(223, 223, 223, 0.822);
+}
+/* style for nav */
+.dashboard {
+  background-color: #f2f3f7;
+}
+
+.dashboard nav #mobile-button {
+  display: none;
+}
+.dashboard nav input {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 10px;
+  background-color: white;
+  outline: none;
+  text-align: center;
+  min-width: 180px;
+  border: none;
+}
+.dashboard nav form span {
+  position: absolute;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  transform: translate(-170px, 4px);
+}
+
+.dashboard .profile {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 30%;
+}
+.dashboard .profile p {
+  font-size: 11px;
+  padding-right: 5px;
+}
+.dashboard .profile img {
+  border-radius: 100%;
+  margin-right: 6px;
+}
+.dashboard .profile span {
+  padding-right: 15px;
+  color: rgb(47, 46, 46);
+}
+
+.dashboard-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-profile img {
+  width: 60px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+  height: 60px;
+}
+.dashboard-profile p {
+  font-size: 12px;
+  color: #ffff;
+}
+.dashboard-profile span {
+  font-size: 10px;
+  color: #ffff;
+}
+
+/* Style for dashboard body */
+.dashboard-body {
+  display: flex;
+}
+.dashboard-body h2 {
+  display: block;
+}
+.dashboard-body .latest-transaction {
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 6px;
+}
+.dashboard-body .currency-rates {
+  width: 40%;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 6px;
+}
+.latest-transaction-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.latest-transaction-header p {
+  font-weight: 500;
+}
+.latest-transaction-header button {
+  padding: 4px 8px;
+  font-size: 11px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: #162a9d;
+}
+.currency-rates-header button {
+  padding: 4px 8px;
+  color: white;
+  font-size: 11px;
+  border: none;
+  border-radius: 3px;
+  background-color: #162a9d;
+}
+.currency-rates-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.latest-transaction-row {
+  padding-bottom: 30px;
+}
+.latest-transaction-row ul {
+  display: flex;
+  justify-content: space-between;
+}
+.latest-transaction-row ul li {
+  list-style: none;
+  width: 25%;
+  font-weight: 500;
+
+  font-size: 13px;
+}
+.latest-transaction-row ul li input[type="checkbox"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+}
+
+.latest-transaction-row ul li input[type="checkbox"]:before {
+  font-family: "FontAwesome";
+  content: "\f111";
+  font-size: 9px;
+  color: transparent !important;
+  background: none;
+  display: block;
+  padding: 1px;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  border: 1px solid #162a9d;
+}
+.latest-transaction-row ul li input[type="checkbox"]:checked:before {
+  color: #162a9d !important;
+}
+
+.latest-transaction-row ul li:nth-of-type(4) input {
+  margin-right: 5px;
+}
+.latest-transaction-row ul li:nth-of-type(5) {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.latest-transaction-row ul li:nth-of-type(5) i {
+  margin-right: 5px;
+}
+.latest-transaction-row ul li:nth-of-type(5) i {
+  font-size: 10px;
+}
+.latest-transaction-row ul li:nth-of-type(6) {
+  text-align: center;
+}
+
+.currency-rates-row {
+  padding-bottom: 30px;
+}
+.currency-rates-header p {
+  font-weight: 500;
+}
+.currency-rates-row ul {
+  display: flex;
+  justify-content: space-between;
+}
+.currency-rates-row ul li {
+  list-style: none;
+  width: 25%;
+  font-size: 13px;
+}
+.currency-rates-row ul li:nth-of-type(1) {
+  font-weight: 500;
+}
+.currency-rates-row ul li:nth-of-type(2) {
+  padding-left: 10px;
+  color: #1a31bd;
+}
+.currency-rates-row ul li:nth-of-type(3) {
+  color: rgb(202, 29, 29);
+}
+.currency-rates-row ul li:nth-of-type(6) {
+  text-align: center;
+}
+
+/* End */
+/* style for card and announcement */
+.cardandannoncement {
+  display: flex;
+}
+
+.cardandannoncement .card {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 199px;
+  margin: 20px;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    #1a31bd 0%,
+    #1a31bd 50%,
+    #172b9e 50%,
+    #172b9e 100%
+  );
+  color: white;
+  border-radius: 10px;
+}
+.cardandannoncement .annoncement {
+  background-image: linear-gradient(0deg, #1b31bfa1, #0e28d6a1),
+    url(../img/remote.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  min-height: 199px;
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.card-header span {
+  font-weight: 600;
+}
+.iconnumber {
+  display: flex;
+  align-items: center;
+}
+.iconandnumber .star {
+  display: flex;
+}
+.star span {
+  font-size: 10px;
+}
+
+.fund {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.fund-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.card p {
+  font-size: 13px;
+}
+
+.annoncement a {
+  text-decoration: none;
+  padding: 6px 10px;
+  background-color: white;
+  color: #1b30bf;
+  margin-top: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.annoncement h3 {
+  margin-top: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.781);
+}
+.annoncement p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.822);
+}
+.annoncement a:nth-of-type(2) {
+  background-color: transparent !important;
+  color: #f8730a;
+}
+/* End */
+
+/* style for subscription */
+.subscription {
+  display: flex;
+  justify-content: space-evenly;
+}
+.subscription .application {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+.application p:nth-of-type(3) {
+  color: #162a9d;
+}
+.application-header {
+  display: flex;
+  margin-bottom: 15px;
+}
+.application-header h1 {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #162a9d;
+}
+.application span {
+  color: #162a9d;
+  font-size: 13px;
+}
+.application .text {
+  margin-left: 15px;
+  line-height: 1.1rem;
+}
+.application .text h3 {
+  font-size: 14px;
+  color: #162a9d;
+}
+.application .text p {
+  font-size: 11px;
+  color: #162a9d;
+}
+.button {
+  margin-top: 15px;
+}
+.button button:nth-of-type(1) {
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  background-color: #162a9d;
+  border-radius: 3px;
+  font-size: 11px;
+}
+.button button:nth-of-type(2) {
+  padding: 5px 15px;
+  border: none;
+  margin-left: 15px;
+  color: white;
+  background-color: #ff6915;
+  border-radius: 3px;
+  font-size: 11px;
+}
+/* End */
