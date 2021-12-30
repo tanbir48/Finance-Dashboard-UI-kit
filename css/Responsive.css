@@ -222,11 +222,14 @@
   .my-task.show {
     display: flex !important;
   }
+  .Main-body .task-item {
+    width: 100%;
+  }
   .Main-body .task-item .task-head {
     display: flex;
     flex-direction: column;
     padding: 6px;
-    width: 355px;
+    width: 100%;
     align-items: center !important;
     justify-content: center;
     margin-bottom: 15px;
