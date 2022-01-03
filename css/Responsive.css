@@ -180,22 +180,30 @@
   }
 }
 @media (max-width: 660px) {
+  .dashboard nav #mobile-button {
+    display: block;
+  }
+  #mobile-cross-button {
+    display: block;
+  }
   .Main-body .my-task {
+    display: block;
+    position: fixed;
+    left: -50%;
+    z-index: 3;
     min-width: 12%;
-    display: none;
-    background-color: #2a3eaf;
     padding: 10px;
   }
   .dashboard-body {
     display: flex;
-    padding: 10px;
     flex-direction: column;
   }
+
   .dashboard-body .latest-transaction {
     width: 100%;
     padding: 20px;
     background-color: white;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     border-radius: 6px;
   }
   .Main-body {
@@ -212,15 +220,22 @@
     margin: 0px;
     border-radius: 6px;
   }
+  .currency-rates-header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+  .latest-transaction-header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 576px) {
-  .my-task {
-    display: none;
-  }
-
   .my-task.show {
     display: flex !important;
+    flex-direction: column;
   }
   .Main-body .task-item {
     width: 100%;
@@ -244,12 +259,7 @@
     font-size: 14px;
     color: #ffff;
   }
-  .Main-body .my-task {
-    min-width: 100%;
-    display: none;
-    background-color: #2a3eaf;
-    padding: 10px;
-  }
+
   .dashboard-body .latest-transaction {
     width: 100%;
     padding: 19px;

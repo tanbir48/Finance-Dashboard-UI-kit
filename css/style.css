@@ -18,6 +18,10 @@ body {
   display: flex;
 }
 
+#mobile-cross-button {
+  display: none;
+}
+
 .Main-body .my-task {
   min-width: 12%;
   background-color: #2a3eaf;
@@ -41,6 +45,19 @@ body {
   justify-content: center;
   margin-bottom: 15px;
 }
+
+.Main-body .task-item .task-head h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Main-body .task-item .task-head h3 span {
+  padding-top: 2px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
 .Main-body .task-item .task-head a {
   text-decoration: none;
   color: black;
