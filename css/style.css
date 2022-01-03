@@ -10,6 +10,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+::placeholder {
+  padding-left: 70px;
+}
 .Main-body {
   display: flex;
 }
@@ -164,6 +168,103 @@ body {
   font-size: 10px;
   color: #ffff;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content */
+.Fdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.Fdropdown .Fdropbtn {
+  border: none;
+}
+.Fdropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+/* dropdown  hover */
+.Fdropdown-content a:hover {
+  background-color: #7a5cf0;
+  color: white;
+}
+
+.show {
+  display: block;
+}
+
+/* second find button drop button content */
+.Ftwodropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.Ftwodropdown .Ftwodropbtn {
+  border: none;
+}
+.Ftwodropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+/* dropdown  hover */
+.Ftwodropdown-content a:hover {
+  background-color: #7a5cf0;
+  color: white;
+}
+
+.show {
+  display: block;
+}
+/* End */
+
+/* Find more button design */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown .dropbtn {
+  background-color: transparent;
+  border: none;
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+/* dropdown  hover */
+.dropdown-content a:hover {
+  background-color: #7a5cf0;
+  color: white;
+}
+
+.show {
+  display: block;
+}
+/* End */
 
 /* Style for dashboard body */
 .dashboard-body {
@@ -372,10 +473,16 @@ body {
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.fund-amount {
+.fund span {
+  font-size: 13px;
+}
+.fundandamount {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+}
+.fund {
+  display: flex;
+  flex-direction: column;
 }
 .card p {
   font-size: 13px;
